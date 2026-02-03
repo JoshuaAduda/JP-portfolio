@@ -1,0 +1,154 @@
+/* comment */
+/* selector target a particular element
+types-class(.name of class)
+-id(# name of id)
+-html tag(tag name) 
+ */
+/* Structure
+ -selector
+ -declaration
+ -calibraces
+  */
+:root {
+  --primary-color: #4c243b;
+  --secondary-color: #ac7b84;
+  --auxilliary-color: #fff;
+  --padding-horizontal:100px;
+  --card-background-color:rgba(250, 245, 245, 0.884);
+}
+html, body,h1, h3,p {
+    margin: 0;
+  font-family: "Poppins", sans-serif;;
+}
+nav {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left:var(--padding-horizontal);
+  padding-right:var(--padding-horizontal);
+  padding-top: 10PX;
+  padding-bottom: 10PX;
+  /* padding:10px 100px 10px 100px; */
+}
+nav>div>a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+nav>span>h3{
+  color: white;
+  margin-left: 4px;
+}
+.logo{
+  display: flex;
+}
+#homesection{
+   display: flex;
+   height: 80vh;
+   align-items: center;
+  padding-left: var(--padding-horizontal);
+  padding-right: var  (var(--padding-horizontal));
+}
+#homesection>img{
+  aspect-ratio: 1/1  ; /* ENABLES UNIFORMITY AS IT SCALES*/
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+#homesection>div{
+  padding-left: 128px;
+  width: 50vw;
+}
+#homesection>div>h1{
+  font-size: 64px;
+  margin: 0;
+  color: var(--primary-color);
+}
+#homesection>div>p{
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 20px;
+  font-weight: 300;
+  color: var(--secondary-color);
+}
+#homesection>div>button{
+  all: unset; /*clears off */                                                                
+  background-color: var(--primary-color);
+  color: #fff;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px ;
+  padding-bottom: 12px;
+  border-radius: 50px;
+  transition: 1s;
+}
+ #homesection>div>button:hover{
+    background-color:#ac7b84;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+  #projectsection{
+    height: 80vh;
+  }
+  #projectsection>.projects{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:400px;
+    padding-right:200PX;
+  }
+  #projectsection>div>h1{
+    color: var(--primary-color);
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+  }
+  #projectsection>div>p{
+    color: var(--secondary-color);
+    font-weight: 300;
+text-align: center;
+margin: 0;
+  }
+  #projectsection>div>.card{
+    background-color: var(--card-background-color);
+    width: 311px;
+    height: 344px;
+    border-radius: 30px;
+    padding: 16px;
+    margin: 12px
+  }
+  #projectsection>div>.card>img{
+    width: 100%;
+    height: 153px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 30px;
+    /* margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px; */
+  }
+
+#projectsection>div>.card>button{ 
+  all: unset;                                                             
+  background-color: var(--primary-color);
+  color: #fff;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px ;
+  padding-bottom: 12px;
+  border-radius: 50px;
+  transition: 1s;
+  width: 80%;
+  text-align: center;
+}
+#projectsection>div>.card>h3{
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-top: 16px;
+}
+#projectsection>div>.card>p{
+  color: var(--secondary-color);
+  margin-top: 12px;
+  font-size: 12px;
+}
